@@ -4,10 +4,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Result</title>
+<title>Home</title>
 <style>
   @charset "UTF-8";
 /* Body */
+
 body {
 	font-family: 'Ubuntu', sans-serif;
 	background-color: #000000;
@@ -67,12 +68,12 @@ header {
 .logo {
 	color: #fff;
 	font-weight: bold;
-	text-align: undefined;
-	width: 15%;
+	text-align: center;
+	width: 10%;
 	float: left;
 	margin-top: 15px;
-	margin-left: 25px;
-	padding-left: 4%;
+	margin-left: 0px;
+	padding-left: 3%;
 }
 nav {
 	float: right;
@@ -282,6 +283,63 @@ hr.contact-divide{
 	padding-left: 10%;
 	padding-right: 10%;
 }
+
+.inputFile{
+    font-size: 1em;
+	color: #0000008a;
+	background-color: rgb(255, 255, 255);
+	display: inline-block;
+	width: 60%;
+	height: 2%;
+	margin-top: 3%;
+	margin-right: auto;
+	margin-bottom: 3%;
+	margin-left: auto;
+	padding-top: 1%;
+	padding-right: 3%;
+	padding-bottom: 1%;
+	padding-left: 3%;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 7px;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 2px;
+	border: 3px solid #222222;
+	transition: all 0.3s linear;
+}
+
+.submitFile{
+    font-size: 1.25em;
+	color: white;
+	background-color: rgb(38, 38, 38);
+	display: inline-block;
+	width: 20%;
+	margin-top: 3%;
+	margin-right: auto;
+	margin-bottom: 3%;
+	margin-left: 1%;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 7px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #fff;
+	transition: all 0.3s linear;
+}
+
+.inputFile{
+	cursor: pointer; /* "hand" cursor */
+}
+.submitFile{
+	cursor: pointer; /* "hand" cursor */
+}
+
 /* More info */
 footer {
 	background-color: #FFFFFF;
@@ -365,6 +423,9 @@ a{
 	text-align: center;
 	margin-top: 5%;
 	padding:0;
+}
+.mob_head {
+	width: 100%;
 }
 .container header nav {
 	margin-top: 0px;
@@ -506,7 +567,7 @@ nav ul li {
 <div class="container"> 
   <!-- Navigation -->
   <header> <a href="/">
-    <section class="logo"><h3 style="margin-top: auto;margin-bottom: auto;">SKIDI</h3></section>
+    <section class="logo"><h3 class="mob_head" style="margin-top: auto;margin-bottom: auto; width: 100%;">SKIDI</h3></section>
   </a>
     <nav>
       <ul>
@@ -517,43 +578,15 @@ nav ul li {
   <!-- Hero Section -->
   <section class="about-header">
     <div class="hero-header">
-      <h1>Result</h1>
+      <h1>Skin Disease Identification App</h1>
     </div>
   </section>
   <section class="content">
     <section class="article-text">
-        {% if result==0 %}
-            <p>Acne</p>
-        {% elif result==1 %}
-            <p>Dermititus</p>
-        {% elif result==2 %}
-            <p>Fungal Infection</p>
-        {% elif result==3 %}
-            <p>Papule</p>
-        {% endif %}
-        <br>
-        <h3>About Disease</h3>
-        {% if result==0 %}
-            <p>Acne, also known as acne vulgaris, is a long-term skin disease that occurs when dead skin cells and oil from the skin clog hair follicles. Typical features of the condition include blackheads or whiteheads, pimples, oily skin, and possible scarring. It primarily affects skin with a relatively high number of oil glands, including the face, upper part of the chest, and back. The resulting appearance can lead to anxiety, reduced self-esteem, and, in extreme cases, depression or thoughts of suicide.<br>
-				Genetics is the primary cause of acne in 80% of cases. The role of diet and cigarette smoking in the condition is unclear, and neither cleanliness nor exposure to sunlight appears to play a part. In both sexes, hormones called androgens appear to be part of the underlying mechanism, by causing increased production of sebum. Another common factor is the excessive growth of the bacterium Cutibacterium acnes, which is present on the skin.<br>
-				Treatments for acne are available, including lifestyle changes, medications, and medical procedures. Eating fewer simple carbohydrates such as sugar may minimize the condition. Treatments applied directly to the affected skin, such as azelaic acid, benzoyl peroxide, and salicylic acid, are commonly used. Antibiotics and retinoids are available in formulations that are applied to the skin and taken by mouth for the treatment of acne. However, resistance to antibiotics may develop as a result of antibiotic therapy. Several types of birth control pills help against acne in women. Medical professionals typically reserve isotretinoin pills for severe acne, due to greater potential side effects. Early and aggressive treatment of acne is advocated by some in the medical community to decrease the overall long-term impact on individuals.</p>
-        {% elif result==1 %}
-            <p>Dermatitis, also known as eczema, is a group of diseases that result in inflammation of the skin. These diseases are characterized by itchiness, red skin and a rash. In cases of short duration, there may be small blisters, while in long-term cases the skin may become thickened. The area of skin involved can vary from small to covering the entire body.<br>
-				Dermatitis includes atopic dermatitis, allergic contact dermatitis, irritant contact dermatitis and stasis dermatitis. The exact cause of the condition is often unclear. Cases may involve a combination of irritation, allergy and poor venous return. The type of dermatitis is generally determined by the person's history and the location of the rash. For example, irritant dermatitis often occurs on the hands of those who frequently get them wet. Allergic contact dermatitis occurs upon exposure to an allergen, causing a hypersensitivity reaction in the skin.<br>
-				Treatment of atopic dermatitis is typically with moisturizers and steroid creams. The steroid creams should generally be of mid- to high strength and used for less than two weeks at a time, as side effects can occur. Antibiotics may be required if there are signs of skin infection. Contact dermatitis is typically treated by avoiding the allergen or irritant. Antihistamines may help with sleep and decrease nighttime scratching.</p>
-        {% elif result==2 %}
-            <p>Fungal infections are common throughout much of the natural world. In humans, fungal infections occur when an invading fungus takes over an area of the body and is too much for the immune system to handle.
-				Fungi can live in the air, soil, water, and plants. There are also some fungi that live naturally in the human body.<br>
-				Like many microbes, there are helpful fungi and harmful fungi. When harmful fungi invade the body, they can be difficult to kill, as they can survive in the environment and re-infect the person trying to get better.
-				In this article, we take a look at who is most at risk of getting a fungal infection and what the symptoms and treatment options are for some common types.<br>
-				The symptoms of a fungal infection will depend on the type, but common symptoms include the following: skin changes, including red and possibly cracking or peeling skin and itching</p>
-        {% elif result==3 %}
-            <p>A papule is a raised area of skin tissue that’s less than 1 centimeter around. A papule can have distinct or indistinct borders. It can appear in a variety of shapes, colors, and sizes. It’s not a diagnosis or disease.<br>
-				Papules are often called skin lesions, which are essentially changes in your skin’s color or texture. Sometimes, papules cluster together to form a rash.<br>
-				In most cases, papules are not serious. Depending on the cause of the papule, such as a wart, it can be relieved with home treatments.<br>
-				However, if the papules appear soon after you start a new medication, consult your doctor immediately.<br>
-				Papules can be seen in almost any skin disease or condition that causes small bumps to appear on your skin. Some examples may be: contact dermatitis, which is caused when certain materials touch the skin and create an irritation or allergic reaction. Warts, which are bumps on the skin caused by human papillomavirus (HPV). Seborrheic keratosis, a condition in which skin growths develop a rough, wart-like appearance). Actinic keratosis, which is commonly known as sun spots. Cherry angioma, a condition in which red moles caused by a collection of small blood vessels develop. Molluscum contagiosum, which is a skin infection caused by Molluscum contagiosum. Keratosis pilaris, a condition in which patches of rough bumps sometimes referred to as “chicken skin” develop. Eczema, which is also known as atopic dermatitis</p>
-        {% endif %}
+		<form method="post" action="/" enctype="multipart/form-data">
+		<input type="file" class= "inputFile" name="file" autocomplete="off" required>
+        <input type="submit" class= "submitFile" value="Submit">
+	  	</form>
     </section>
   </section>
   <!-- Copyrights Section -->

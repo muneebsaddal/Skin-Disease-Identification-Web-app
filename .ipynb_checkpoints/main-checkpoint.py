@@ -13,10 +13,6 @@ def allowed_file(filename):
 def upload_form():
 	return render_template('home.html')
 
-@app.route('/about')
-def about_page():
-	return render_template('about.html')
-
 @app.route('/result')
 def result():
 	import keras
@@ -24,8 +20,8 @@ def result():
 	from keras.preprocessing import image
 	import numpy as np
 
-	img_width, img_height = 224, 224
-	img = image.load_img('images/0.jpg', target_size=(img_width, img_height))	
+	img_width, img_height = 100, 100
+	img = image.load_img('images/0.JPG', target_size=(img_width, img_height))	
 	model = load_model('model.h5')
 	model.compile(optimizer=keras.optimizers.SGD(lr=0.001, nesterov=True),loss="poisson",metrics=["accuracy"])
 	x = image.img_to_array(img)
@@ -50,8 +46,7 @@ def upload_file():
 			return redirect(request.url)
 		if file and allowed_file(file.filename):
 			filename = secure_filename(file.filename)
-			file.filename = "0.jpg"
-			file.save(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
+			file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 			flash('File successfully uploaded')
 			return redirect('/result')
 		else:
