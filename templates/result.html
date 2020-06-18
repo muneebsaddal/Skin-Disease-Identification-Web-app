@@ -525,35 +525,126 @@ nav ul li {
         {% if result==0 %}
             <p>Acne</p>
         {% elif result==1 %}
-            <p>Dermititus</p>
+            <p>Bacterial Infection</p>
         {% elif result==2 %}
-            <p>Fungal Infection</p>
+            <p>Dermatitis</p>
         {% elif result==3 %}
+            <p>Fungal Infection</p>
+        {% elif result==4 %}
+            <p>Hyperpigmentation</p>
+        {% elif result==5 %}
+            <p>Hypertrophy</p>
+        {% elif result==6 %}
+            <p>Mole</p>
+        {% elif result==7 %}
             <p>Papule</p>
+        {% elif result==8 %}
+            <p>Scabies</p>
+        {% elif result==9 %}
+            <p>Skin Virus</p>
         {% endif %}
         <br>
         <h3>About Disease</h3>
         {% if result==0 %}
-            <p>Acne, also known as acne vulgaris, is a long-term skin disease that occurs when dead skin cells and oil from the skin clog hair follicles. Typical features of the condition include blackheads or whiteheads, pimples, oily skin, and possible scarring. It primarily affects skin with a relatively high number of oil glands, including the face, upper part of the chest, and back. The resulting appearance can lead to anxiety, reduced self-esteem, and, in extreme cases, depression or thoughts of suicide.<br>
-				Genetics is the primary cause of acne in 80% of cases. The role of diet and cigarette smoking in the condition is unclear, and neither cleanliness nor exposure to sunlight appears to play a part. In both sexes, hormones called androgens appear to be part of the underlying mechanism, by causing increased production of sebum. Another common factor is the excessive growth of the bacterium Cutibacterium acnes, which is present on the skin.<br>
-				Treatments for acne are available, including lifestyle changes, medications, and medical procedures. Eating fewer simple carbohydrates such as sugar may minimize the condition. Treatments applied directly to the affected skin, such as azelaic acid, benzoyl peroxide, and salicylic acid, are commonly used. Antibiotics and retinoids are available in formulations that are applied to the skin and taken by mouth for the treatment of acne. However, resistance to antibiotics may develop as a result of antibiotic therapy. Several types of birth control pills help against acne in women. Medical professionals typically reserve isotretinoin pills for severe acne, due to greater potential side effects. Early and aggressive treatment of acne is advocated by some in the medical community to decrease the overall long-term impact on individuals.</p>
+            <p>Acne, also known as acne vulgaris, is a long-term skin disease that occurs when dead skin cells and oil from the skin clog hair follicles. Typical features of the condition
+				 include blackheads or whiteheads, pimples, oily skin, and possible scarring. It primarily affects skin with a relatively high number of oil glands, including the face, upper 
+				 part of the chest, and back. The resulting appearance can lead to anxiety, reduced self-esteem, and, in extreme cases, depression or thoughts of suicide.<br>
+				Genetics is the primary cause of acne in 80% of cases. The role of diet and cigarette smoking in the condition is unclear, and neither cleanliness nor exposure to sunlight 
+				appears to play a part. In both sexes, hormones called androgens appear to be part of the underlying mechanism, by causing increased production of sebum. Another common factor 
+				is the excessive growth of the bacterium Cutibacterium acnes, which is present on the skin.<br>
+				Treatments for acne are available, including lifestyle changes, medications, and medical procedures. Eating fewer simple carbohydrates such as sugar may minimize the condition. 
+				Treatments applied directly to the affected skin, such as azelaic acid, benzoyl peroxide, and salicylic acid, are commonly used. Antibiotics and retinoids are available in 
+				formulations that are applied to the skin and taken by mouth for the treatment of acne. However, resistance to antibiotics may develop as a result of antibiotic therapy. 
+				Several types of birth control pills help against acne in women. Medical professionals typically reserve isotretinoin pills for severe acne, due to greater potential side effects. 
+				Early and aggressive treatment of acne is advocated by some in the medical community to decrease the overall long-term impact on individuals.</p>
         {% elif result==1 %}
-            <p>Dermatitis, also known as eczema, is a group of diseases that result in inflammation of the skin. These diseases are characterized by itchiness, red skin and a rash. In cases of short duration, there may be small blisters, while in long-term cases the skin may become thickened. The area of skin involved can vary from small to covering the entire body.<br>
-				Dermatitis includes atopic dermatitis, allergic contact dermatitis, irritant contact dermatitis and stasis dermatitis. The exact cause of the condition is often unclear. Cases may involve a combination of irritation, allergy and poor venous return. The type of dermatitis is generally determined by the person's history and the location of the rash. For example, irritant dermatitis often occurs on the hands of those who frequently get them wet. Allergic contact dermatitis occurs upon exposure to an allergen, causing a hypersensitivity reaction in the skin.<br>
-				Treatment of atopic dermatitis is typically with moisturizers and steroid creams. The steroid creams should generally be of mid- to high strength and used for less than two weeks at a time, as side effects can occur. Antibiotics may be required if there are signs of skin infection. Contact dermatitis is typically treated by avoiding the allergen or irritant. Antihistamines may help with sleep and decrease nighttime scratching.</p>
+            <p>A bacterial infection is a proliferation of a harmful strain of bacteria on or inside the body. Bacteria can infect any area of the body. Pneumonia, meningitis, and food poisoning are just a few 
+				illnesses that may be caused by harmful bacteria. Bacteria come in three basic shapes: rod-shaped (bacilli), spherical (cocci), or helical (spirilla). Bacteria may also be classified as 
+				gram-positive or gram-negative. Gram-positive bacteria have a thick cell wall while gram-negative bacteria do not. Gram staining, bacterial culture with antibiotic sensitivity determination,
+				 and other tests like genetic analysis are used to identify bacterial strains and help determine the appropriate course of treatment.<br>
+				 Bacterial skin infections are usually caused by gram-positive strains of Staphylococcus and Streptococcus or other organisms. Common bacterial skin infections include:<br>
+				 Cellulitis causes a painful, red infection that is usually warm to the touch. Cellulitis occurs most often on the legs, but it can appear anywhere on the body.
+				 Folliculitis is an infection of the hair follicles that causes red, swollen bumps that look like pimples. Improperly treated pools or hot tubs can harbor bacteria that cause folliculitis.
+				 Impetigo causes oozing sores, usually in preschool-aged children. The bullous form of impetigo causes large blisters while the non-bullous form has a yellow, crusted appearance.
+				 Boils are deep skin infections that start in hair follicles. Boils are firm, red, tender bumps that progress until pus accumulates underneath the skin. 
+				 Bacterial skin infections are treated with oral or topical antibiotics depending on the strain causing the infection.</p>
         {% elif result==2 %}
-            <p>Fungal infections are common throughout much of the natural world. In humans, fungal infections occur when an invading fungus takes over an area of the body and is too much for the immune system to handle.
+            <p>Dermatitis, also known as eczema, is a group of diseases that result in inflammation of the skin. These diseases are characterized by itchiness, 
+				red skin and a rash. In cases of short duration, there may be small blisters, while in long-term cases the skin may become thickened. The area 
+				of skin involved can vary from small to covering the entire body.<br>
+				Dermatitis includes atopic dermatitis, allergic contact dermatitis, irritant contact dermatitis and stasis dermatitis. The exact cause of the 
+				condition is often unclear. Cases may involve a combination of irritation, allergy and poor venous return. The type of dermatitis is generally 
+				determined by the person's history and the location of the rash. For example, irritant dermatitis often occurs on the hands of those who frequently 
+				get them wet. Allergic contact dermatitis occurs upon exposure to an allergen, causing a hypersensitivity reaction in the skin.<br>
+				Treatment of atopic dermatitis is typically with moisturizers and steroid creams. The steroid creams should generally be of mid- to high strength 
+				and used for less than two weeks at a time, as side effects can occur. Antibiotics may be required if there are signs of skin infection. Contact 
+				dermatitis is typically treated by avoiding the allergen or irritant. Antihistamines may help with sleep and decrease nighttime scratching.</p>
+        {% elif result==3 %}
+            <p>Fungal infections are common throughout much of the natural world. In humans, fungal infections occur when an invading fungus takes over an area 
+				of the body and is too much for the immune system to handle.
 				Fungi can live in the air, soil, water, and plants. There are also some fungi that live naturally in the human body.<br>
-				Like many microbes, there are helpful fungi and harmful fungi. When harmful fungi invade the body, they can be difficult to kill, as they can survive in the environment and re-infect the person trying to get better.
+				Like many microbes, there are helpful fungi and harmful fungi. When harmful fungi invade the body, they can be difficult to kill, as they can 
+				survive in the environment and re-infect the person trying to get better.
 				In this article, we take a look at who is most at risk of getting a fungal infection and what the symptoms and treatment options are for some common types.<br>
 				The symptoms of a fungal infection will depend on the type, but common symptoms include the following: skin changes, including red and possibly cracking or peeling skin and itching</p>
-        {% elif result==3 %}
+        {% elif result==4 %}
+            <p>Hyperpigmentation is a common, usually harmless condition in which patches of skin become darker in color than the normal surrounding skin. 
+				This darkening occurs when an excess of melanin, the brown pigment that produces normal skin color, forms deposits in the skin. Hyperpigmentation can affect the skin color of people of any race.<br>
+				Age or "liver" spots are a common form of hyperpigmentation. They occur due to sun damage, and are referred to by doctors as solar lentigines. 
+				These small, darkened patches are usually found on the hands and face or other areas frequently exposed to the sun.
+				Changes in skin color can result from outside causes. For example, skin diseases such as acne may leave dark spots after the condition clears. Other causes of dark spots are 
+				injuries to the skin, including some surgeries. Freckles are small brown spots that can appear anywhere on the body, but are most common on the face and arms. 
+				Freckles are an inherited characteristic. Freckles, age spots, and other darkened skin patches can become darker or more pronounced when skin is exposed to the sun. 
+				This happens because melanin absorbs the energy of the sun's harmful ultraviolet rays in order to protect he skin from overexposure. The usual result of this process 
+				is skin tanning, which tends to darken areas that are already hyperpigmented. Wearing a sunscreen is a must. 
+				The sunscreen must be "broad spectrum" (i.e. it blocks both UVA and UVB). A single day of excess sun can undo months of treatment.</p>
+        {% elif result==5 %}
+            <p>A hypertrophic scar is a thickened, wide, often raised scar that develops where skin is injured. Scars are common during the wound healing process, 
+				but a hypertrophic scar is a result of an abnormal response to a trauma or injury. <br>In certain people, body cells called myofibroblasts produce 
+				too much collagen during healing. This can happen simply as a result of a person’s skin type and healing tendencies. More commonly, overproduction of 
+				collagen occurs when a wound is infected or inflamed, under a great deal of tension or motion (such as in injuries over a joint), or left to heal without stitches.<br>
+				The scars are a frequent complication of burn injuries, but can also form after piercings, cuts, or even acne. 
+				Hypertrophic scars are similar to keloid scars but tend to be milder and don’t grow beyond the boundaries of the original skin injury.
+				The scars aren’t dangerous or life-threatening. They can be itchy and painful, but more often are simply a cosmetic issue. 
+				Some people seek treatment to minimize the appearance of the scar. There isn’t an officially established treatment regimen for 
+				hypertrophic scars, but a variety of treatments can help get rid of the scar more quickly. </p>
+        {% elif result==6 %}
+            <p>Moles are growths on the skin that are usually brown or black. Moles can appear anywhere on the skin, alone or in groups.<br>
+				Most moles appear in early childhood and during the first 25 years of a person's life. It is normal to have between 10-40 moles by adulthood.<br>				
+				As the years pass, moles usually change slowly, becoming raised and/or changing color. Sometimes, hairs develop in the mole. Some moles may not change at all, while others may slowly disappear over time.<br>
+				Congenital nevi are moles that are present at birth. Congenital nevi occur in about one in 100 people. These moles are slightly more likely to develop into melanoma (cancer) than 
+				are moles that appear after birth. A mole or freckle should be checked if it has a diameter of more than a pencil eraser or any characteristics of the ABCDEs of melanoma.<br>
+				Dysplastic nevi are moles that are generally larger than average (larger than a pencil eraser) and irregular in shape. They tend to have uneven color 
+				with dark brown centers and lighter, uneven edges. These nevi are somewhat more likely to become melanoma. In fact, people who have 10 or more dysplastic nevi 
+				have a 12 times higher chance of developing melanoma, a serious form of skin cancer. Any changes in a mole should be checked by a dermatologist to evaluate for skin cancer</p>
+        {% elif result==7 %}
             <p>A papule is a raised area of skin tissue that’s less than 1 centimeter around. A papule can have distinct or indistinct borders. It can appear in a variety of shapes, colors, and sizes. It’s not a diagnosis or disease.<br>
 				Papules are often called skin lesions, which are essentially changes in your skin’s color or texture. Sometimes, papules cluster together to form a rash.<br>
 				In most cases, papules are not serious. Depending on the cause of the papule, such as a wart, it can be relieved with home treatments.<br>
 				However, if the papules appear soon after you start a new medication, consult your doctor immediately.<br>
-				Papules can be seen in almost any skin disease or condition that causes small bumps to appear on your skin. Some examples may be: contact dermatitis, which is caused when certain materials touch the skin and create an irritation or allergic reaction. Warts, which are bumps on the skin caused by human papillomavirus (HPV). Seborrheic keratosis, a condition in which skin growths develop a rough, wart-like appearance). Actinic keratosis, which is commonly known as sun spots. Cherry angioma, a condition in which red moles caused by a collection of small blood vessels develop. Molluscum contagiosum, which is a skin infection caused by Molluscum contagiosum. Keratosis pilaris, a condition in which patches of rough bumps sometimes referred to as “chicken skin” develop. Eczema, which is also known as atopic dermatitis</p>
-        {% endif %}
+				Papules can be seen in almost any skin disease or condition that causes small bumps to appear on your skin. Some examples may be: contact dermatitis, which is caused when 
+				certain materials touch the skin and create an irritation or allergic reaction. Warts, which are bumps on the skin caused by human papillomavirus (HPV). Seborrheic keratosis, 
+				a condition in which skin growths develop a rough, wart-like appearance). Actinic keratosis, which is commonly known as sun spots. Cherry angioma, a condition in which red moles 
+				caused by a collection of small blood vessels develop. Molluscum contagiosum, which is a skin infection caused by Molluscum contagiosum. Keratosis pilaris, a condition in which 
+				patches of rough bumps sometimes referred to as “chicken skin” develop. Eczema, which is also known as atopic dermatitis</p>
+		{% elif result==8 %}
+            <p>Scabies is a skin infestation caused by a mite known as the Sarcoptes scabiei. Untreated, these microscopic mites can live on your skin for months. 
+				They reproduce on the surface of your skin and then burrow into it and lay eggs. This causes an itchy, red rash to form on the skin.
+				There are approximately 130 million cases of scabies in the world at any given time. While it’s a highly contagious condition that can easily be passed 
+				from one person to another through direct skin contact, scabies isn’t a sexually transmitted disease.				
+				The infestation of mites may also be transmitted through infested clothing or bedding. Intimate contact isn’t necessary.				
+				Although scabies can be bothersome, they can usually be eliminated effectively. Treatment often consists of medications that kill scabies mites and their eggs. 
+				Since scabies is so contagious, doctors will usually recommend treatment for an entire group of people who are in frequent contact with a person who has scabies.
+				Recognizing scabies bites and the distinctive red rash can help you find treatment faster. </p>
+        {% elif result==9 %}
+            <p>Your skin is the largest organ of your body. Its function is to protect your body from infection. Sometimes the skin itself becomes infected. 
+				Skin infections are caused by a wide variety of germs, and symptoms can vary from mild to serious. Mild infections may be treatable with over-the-counter 
+				medications and home remedies, whereas other infections may require medical attention. Read on to learn more about skin infections and what to do if you have one.<br>
+				The symptoms of a skin infection also vary depending on the type. Common symptoms include redness of the skin and a rash. You may also experience other symptoms, 
+				such as itching, pain, and tenderness. See a doctor if you have pus-filled blisters or a skin infection that doesn’t improve or 
+				gets progressively worse. Skin infections can spread beyond the skin and into the bloodstream. When this happens it can become life-threatening.Signs of a severe infection include:<br>
+				pus, blisters, skin sloughing, breakdown, dark, necrotic-appearing skin, or skin that becomes discolored and painful</p>
+      	{% endif %}
     </section>
   </section>
   <!-- Copyrights Section -->

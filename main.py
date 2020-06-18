@@ -19,17 +19,20 @@ def about_page():
 
 @app.route('/result')
 def result():
-	import keras
+	from keras.optimizers import SGD
 	from keras.models import load_model
 	from keras.preprocessing import image
+	from keras.models import Sequential
+	from keras.layers import Dense, Dropout, Flatten
+	import efficientnet.keras as efn
 	import numpy as np
+
 
 	img_width, img_height = 224, 224
 	img = image.load_img('images/0.jpg', target_size=(img_width, img_height))	
-	model = load_model('model.h5')
-	model.compile(optimizer=keras.optimizers.SGD(lr=0.001, nesterov=True),loss="poisson",metrics=["accuracy"])
-	x = image.img_to_array(img)
-	x = np.expand_dims(x, axis=0)
+	model = load_model('model_1.h5')
+	model.compile(optimizer=SGD(lr=0.001, nesterov=True),
+		loss="categorical_crossentropy",metrics=["accuracy"])
 	x = image.img_to_array(img)
 	x = np.expand_dims(x, axis=0)
 	images = np.vstack([x])
